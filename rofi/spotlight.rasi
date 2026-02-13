@@ -1,0 +1,38 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    drun-display-format: "{name}";
+    font: "JetBrains Mono 18";
+}
+
+* {
+   background-color: rgba(0, 0, 0, 0.2);   /* Fully transparent */
+    text-color: #ffffff;                   /* White text */
+    border: 0px;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+window {
+    width: 65%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.0);  /* Fully transparent window */
+}
+
+element {
+    padding: 8px;
+}
+
+element selected {
+    background-color: rgba(255, 255, 255, 0.2);  /* Light transparent highlight */
+    text-color: #ffffff;
+    border-radius: 8px;
+}
+
+entry {
+    background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent search bar */
+    text-color: #ffffff;
+    placeholder-color: #aaaaaa;
+    padding: 6px;
+    border-radius: 10px;
+}

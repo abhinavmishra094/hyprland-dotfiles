@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Export environment to user systemd
+dbus-update-activation-environment --systemd \
+  WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+
+# Kill any stale portals
+pkill -f xdg-desktop-portal || true
+pkill -f xdg-desktop-portal-hyprland || true
+pkill -f xdg-desktop-portal-wlr || true
+pkill -f xdg-desktop-portal-kde || true
+
+sleep 1
+
+# Start portals the correct way
+systemctl --user start xdg-desktop-portal-hyprland
