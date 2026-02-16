@@ -44,6 +44,12 @@
         "spacing": 10
     },
 
+    "custom/hyprpwcenter": {
+        "format": "🎛️",
+        "tooltip": false,
+        "on-click": "hyprpwcenter"
+    },
+
     "clock": {
         "format": "{:%H:%M:%S   %d-%m-%Y}",
         "interval": 1,
@@ -54,8 +60,8 @@
         "format": "{icon} {volume}%",
         "tooltip": false,
         "format-muted": "🔇 Muted",
-        "on-click": "pavucontrol",
         "on-click-right": "pamixer -t",
+         "on-click": "hyprpwcenter",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
         "max_volume": 1.5,
@@ -75,7 +81,6 @@
         "format": "{format_source}",
         "format-source": " {volume}%",
         "format-source-muted": " Muted",
-        "on-click": "pavucontrol",
         "on-click-right": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
