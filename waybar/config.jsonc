@@ -61,7 +61,7 @@
         "tooltip": false,
         "format-muted": "🔇 Muted",
         "on-click-right": "pamixer -t",
-         "on-click": "hyprpwcenter",
+         "on-click": "pavucontrol",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
         "max_volume": 1.5,
