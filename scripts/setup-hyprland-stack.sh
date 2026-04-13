@@ -62,12 +62,20 @@ AUR_PACKAGES=(
 )
 
 CONFIG_DIRS=(
+  alacritty
   environment.d
+  ghostty
   gtk-3.0
   gtk-4.0
   hypr
+  mako
   waybar
   rofi
+  sunshine
+  swaylock
+  swaync
+  swayosd
+  walker
   wofi
   dunst
   kitty
@@ -77,6 +85,7 @@ CONFIG_DIRS=(
   Kvantum
   nwg-look
   waypaper
+  wayvnc
   wlogout
   xdg-desktop-portal
 )
@@ -90,6 +99,7 @@ CONFIG_FILES=(
   autostart/OpenRGB.desktop
   systemd/user/hyprland-session.target
   systemd/user/sunshine.service
+  wayvnc/config.example
 )
 
 log() {

@@ -1,0 +1,36 @@
+/* Waybar color scheme - Static Theme */
+
+@define-color background #191724;
+@define-color on-background #e0def4;
+@define-color surface #1f1d2e;
+@define-color on-surface #e0def4;
+@define-color surface-variant #26233a;
+@define-color on-surface-variant #908caa;
+
+@define-color primary #eb6f92;
+@define-color on-primary #191724;
+@define-color primary-container #f6a3b5;
+@define-color on-primary-container #191724;
+
+@define-color secondary #31748f;
+@define-color on-secondary #e0def4;
+@define-color secondary-container #4fa3c3;
+@define-color on-secondary-container #191724;
+
+@define-color tertiary #c4a7e7;
+@define-color on-tertiary #191724;
+@define-color tertiary-container #dcc6f0;
+@define-color on-tertiary-container #191724;
+
+@define-color error #eb6f92;
+@define-color on-error #191724;
+@define-color error-container #f6a3b5;
+@define-color on-error-container #191724;
+
+@define-color outline #6e6a86;
+@define-color outline-variant #797593;
+@define-color shadow #000000;
+@define-color scrim #000000;
+@define-color inverse-surface #191724;
+@define-color inverse-on-surface #e0def4;
+@define-color inverse-primary #eb6f92;

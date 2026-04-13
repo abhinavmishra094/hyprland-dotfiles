@@ -1,0 +1,1 @@
+/home/abhinav/.config/omarchy-theming/elephant/omarchy_themes.lua

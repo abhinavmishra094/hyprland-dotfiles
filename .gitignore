@@ -1,0 +1,16 @@
+Ferdium/
+go/telemetry/
+net.imput.helium/
+Signal/
+t3code/
+sunshine/credentials/
+sunshine/sunshine.log
+sunshine/sunshine_state.json
+wayvnc/config
+gtk-3.0/bookmarks
+matugen/templates/.gtk-colors.css.kate-swp
+kitty/current-theme.conf
+kitty/kitty.conf.bak
+hypr/hyprtoolkit.conf.bak
+.directory
+.mangojuice
