@@ -91,7 +91,6 @@ CONFIG_DIRS=(
 )
 
 CONFIG_FILES=(
-  kdeglobals
   mimeapps.list
   autostart/bitwarden.desktop
   autostart/com.github.hluk.copyq.desktop
