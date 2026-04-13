@@ -74,10 +74,10 @@ kwritemetainfos
 kwriterc
 lact/
 menus/
-mpv/
 neofetch/
 nodemon.json
 nvm/
+nvim.backup/
 opencode/
 opera/
 partitionmanagerrc
