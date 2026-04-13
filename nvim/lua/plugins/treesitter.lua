@@ -1,0 +1,12 @@
+return {
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    ensure_installed = {
+      "go",
+      "gomod",
+      "gosum",
+      "gowork",
+    },
+    highlight = { enable = true },
+  },
+}
