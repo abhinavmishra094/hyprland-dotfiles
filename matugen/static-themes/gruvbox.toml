@@ -1,0 +1,64 @@
+# Gruvbox Dark Theme - Static Colors
+name = "gruvbox"
+display_name = "Gruvbox"
+
+# Base colors
+background = "#282828"
+foreground = "#ebdbb2"
+cursor = "#928374"
+selection_background = "#d65d0e"
+selection_foreground = "#ebdbb2"
+
+# Material You compatible palette
+primary = "#d79921"
+on_primary = "#282828"
+primary_container = "#fabd2f"
+on_primary_container = "#282828"
+
+secondary = "#98971a"
+on_secondary = "#282828"
+secondary_container = "#b8bb26"
+on_secondary_container = "#282828"
+
+tertiary = "#458588"
+on_tertiary = "#ebdbb2"
+tertiary_container = "#83a598"
+on_tertiary_container = "#282828"
+
+error = "#cc241d"
+on_error = "#ebdbb2"
+error_container = "#fb4934"
+on_error_container = "#282828"
+
+surface = "#3c3836"
+on_surface = "#ebdbb2"
+surface_variant = "#504945"
+on_surface_variant = "#bdae93"
+
+outline = "#928374"
+outline_variant = "#a89984"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Gruvbox palette)
+color0 = "#282828"
+color1 = "#cc241d"
+color2 = "#98971a"
+color3 = "#d79921"
+color4 = "#458588"
+color5 = "#b16286"
+color6 = "#689d6a"
+color7 = "#a89984"
+color8 = "#928374"
+color9 = "#fb4934"
+color10 = "#b8bb26"
+color11 = "#fabd2f"
+color12 = "#83a598"
+color13 = "#d3869b"
+color14 = "#8ec07c"
+color15 = "#ebdbb2"
+
+# Application theme names
+zed_theme = "Gruvbox Dark"
+kde_theme = "Gruvbox"
+gtk_theme = "Gruvbox"

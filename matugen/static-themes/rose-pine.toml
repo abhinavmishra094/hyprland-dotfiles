@@ -1,0 +1,64 @@
+# Rose Pine Theme - Static Colors
+name = "rose-pine"
+display_name = "Rose Pine"
+
+# Base colors
+background = "#191724"
+foreground = "#e0def4"
+cursor = "#524f67"
+selection_background = "#26233a"
+selection_foreground = "#e0def4"
+
+# Material You compatible palette
+primary = "#eb6f92"
+on_primary = "#191724"
+primary_container = "#f6a3b5"
+on_primary_container = "#191724"
+
+secondary = "#31748f"
+on_secondary = "#e0def4"
+secondary_container = "#4fa3c3"
+on_secondary_container = "#191724"
+
+tertiary = "#c4a7e7"
+on_tertiary = "#191724"
+tertiary_container = "#dcc6f0"
+on_tertiary_container = "#191724"
+
+error = "#eb6f92"
+on_error = "#191724"
+error_container = "#f6a3b5"
+on_error_container = "#191724"
+
+surface = "#1f1d2e"
+on_surface = "#e0def4"
+surface_variant = "#26233a"
+on_surface_variant = "#908caa"
+
+outline = "#6e6a86"
+outline_variant = "#797593"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Rose Pine palette)
+color0 = "#26233a"
+color1 = "#eb6f92"
+color2 = "#31748f"
+color3 = "#f6c177"
+color4 = "#9ccfd8"
+color5 = "#c4a7e7"
+color6 = "#ebbcba"
+color7 = "#e0def4"
+color8 = "#6e6a86"
+color9 = "#eb6f92"
+color10 = "#31748f"
+color11 = "#f6c177"
+color12 = "#9ccfd8"
+color13 = "#c4a7e7"
+color14 = "#ebbcba"
+color15 = "#e0def4"
+
+# Application theme names
+zed_theme = "Rose Pine"
+kde_theme = "Rose Pine"
+gtk_theme = "Rose Pine"

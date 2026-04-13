@@ -1,0 +1,64 @@
+# Monokai Theme - Static Colors
+name = "monokai"
+display_name = "Monokai"
+
+# Base colors
+background = "#272822"
+foreground = "#f8f8f2"
+cursor = "#f8f8f2"
+selection_background = "#49483e"
+selection_foreground = "#f8f8f2"
+
+# Material You compatible palette
+primary = "#a6e22e"
+on_primary = "#272822"
+primary_container = "#c8f56e"
+on_primary_container = "#272822"
+
+secondary = "#66d9ef"
+on_secondary = "#272822"
+secondary_container = "#96f0ff"
+on_secondary_container = "#272822"
+
+tertiary = "#fd971f"
+on_tertiary = "#272822"
+tertiary_container = "#ffb86f"
+on_tertiary_container = "#272822"
+
+error = "#f92672"
+on_error = "#272822"
+error_container = "#ff6aa2"
+on_error_container = "#272822"
+
+surface = "#383830"
+on_surface = "#f8f8f2"
+surface_variant = "#49483e"
+on_surface_variant = "#90908a"
+
+outline = "#75715e"
+outline_variant = "#8f8a78"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Monokai palette)
+color0 = "#272822"
+color1 = "#f92672"
+color2 = "#a6e22e"
+color3 = "#f4bf75"
+color4 = "#66d9ef"
+color5 = "#ae81ff"
+color6 = "#a1efe4"
+color7 = "#f8f8f2"
+color8 = "#75715e"
+color9 = "#f92672"
+color10 = "#a6e22e"
+color11 = "#f4bf75"
+color12 = "#66d9ef"
+color13 = "#ae81ff"
+color14 = "#a1efe4"
+color15 = "#f9f8f5"
+
+# Application theme names
+zed_theme = "Monokai"
+kde_theme = "Monokai"
+gtk_theme = "Monokai"

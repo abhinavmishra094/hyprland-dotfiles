@@ -1,0 +1,64 @@
+# Everforest Theme - Static Colors
+name = "everforest"
+display_name = "Everforest"
+
+# Base colors
+background = "#2b3339"
+foreground = "#d3c6aa"
+cursor = "#9da9a0"
+selection_background = "#4f5858"
+selection_foreground = "#d3c6aa"
+
+# Material You compatible palette
+primary = "#a7c080"
+on_primary = "#2b3339"
+primary_container = "#c5d6a3"
+on_primary_container = "#2b3339"
+
+secondary = "#7fbbb3"
+on_secondary = "#2b3339"
+secondary_container = "#9dd1c9"
+on_secondary_container = "#2b3339"
+
+tertiary = "#e69875"
+on_tertiary = "#2b3339"
+tertiary_container = "#ffb591"
+on_tertiary_container = "#2b3339"
+
+error = "#e67e80"
+on_error = "#2b3339"
+error_container = "#ff9ea0"
+on_error_container = "#2b3339"
+
+surface = "#374247"
+on_surface = "#d3c6aa"
+surface_variant = "#4f5858"
+on_surface_variant = "#9da9a0"
+
+outline = "#859289"
+outline_variant = "#949c96"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Everforest palette)
+color0 = "#374247"
+color1 = "#e67e80"
+color2 = "#a7c080"
+color3 = "#dbbc7f"
+color4 = "#7fbbb3"
+color5 = "#d699b6"
+color6 = "#83c092"
+color7 = "#d3c6aa"
+color8 = "#4f5858"
+color9 = "#e67e80"
+color10 = "#a7c080"
+color11 = "#dbbc7f"
+color12 = "#7fbbb3"
+color13 = "#d699b6"
+color14 = "#83c092"
+color15 = "#d3c6aa"
+
+# Application theme names
+zed_theme = "Everforest"
+kde_theme = "Everforest"
+gtk_theme = "Everforest"

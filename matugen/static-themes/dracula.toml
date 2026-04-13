@@ -1,0 +1,64 @@
+# Dracula Theme - Static Colors
+name = "dracula"
+display_name = "Dracula"
+
+# Base colors
+background = "#282a36"
+foreground = "#f8f8f2"
+cursor = "#f8f8f2"
+selection_background = "#44475a"
+selection_foreground = "#f8f8f2"
+
+# Material You compatible palette
+primary = "#bd93f9"
+on_primary = "#282a36"
+primary_container = "#d6b3ff"
+on_primary_container = "#282a36"
+
+secondary = "#50fa7b"
+on_secondary = "#282a36"
+secondary_container = "#7bffa3"
+on_secondary_container = "#282a36"
+
+tertiary = "#8be9fd"
+on_tertiary = "#282a36"
+tertiary_container = "#b5f3ff"
+on_tertiary_container = "#282a36"
+
+error = "#ff5555"
+on_error = "#282a36"
+error_container = "#ff8888"
+on_error_container = "#282a36"
+
+surface = "#44475a"
+on_surface = "#f8f8f2"
+surface_variant = "#6272a4"
+on_surface_variant = "#a0a8c0"
+
+outline = "#6272a4"
+outline_variant = "#7b88b8"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Dracula palette)
+color0 = "#000000"
+color1 = "#ff5555"
+color2 = "#50fa7b"
+color3 = "#f1fa8c"
+color4 = "#bd93f9"
+color5 = "#ff79c6"
+color6 = "#8be9fd"
+color7 = "#bfbfbf"
+color8 = "#4d4d4d"
+color9 = "#ff6e67"
+color10 = "#5af78e"
+color11 = "#f4f99d"
+color12 = "#caa9fa"
+color13 = "#ff92d0"
+color14 = "#9aedfe"
+color15 = "#e6e6e6"
+
+# Application theme names
+zed_theme = "Dracula"
+kde_theme = "Dracula"
+gtk_theme = "Dracula"

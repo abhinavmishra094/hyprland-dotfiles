@@ -1,0 +1,64 @@
+# Kanagawa Theme - Static Colors
+name = "kanagawa"
+display_name = "Kanagawa"
+
+# Base colors
+background = "#1f1f28"
+foreground = "#dcd7ba"
+cursor = "#c8c093"
+selection_background = "#363646"
+selection_foreground = "#dcd7ba"
+
+# Material You compatible palette
+primary = "#7e9cd8"
+on_primary = "#1f1f28"
+primary_container = "#a8c5f0"
+on_primary_container = "#1f1f28"
+
+secondary = "#98bb6c"
+on_secondary = "#1f1f28"
+secondary_container = "#b8d98a"
+on_secondary_container = "#1f1f28"
+
+tertiary = "#d27e99"
+on_tertiary = "#1f1f28"
+tertiary_container = "#f0a0bb"
+on_tertiary_container = "#1f1f28"
+
+error = "#ff5d62"
+on_error = "#1f1f28"
+error_container = "#ff858a"
+on_error_container = "#1f1f28"
+
+surface = "#2a2a37"
+on_surface = "#dcd7ba"
+surface_variant = "#363646"
+on_surface_variant = "#727169"
+
+outline = "#54546d"
+outline_variant = "#625e7a"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Kanagawa palette)
+color0 = "#090618"
+color1 = "#c34043"
+color2 = "#76946a"
+color3 = "#c0a36e"
+color4 = "#7e9cd8"
+color5 = "#957fb8"
+color6 = "#6a9589"
+color7 = "#c8c093"
+color8 = "#727169"
+color9 = "#ff5d62"
+color10 = "#98bb6c"
+color11 = "#e6c384"
+color12 = "#7fb4ca"
+color13 = "#938aa9"
+color14 = "#7aa89f"
+color15 = "#dcd7ba"
+
+# Application theme names
+zed_theme = "Kanagawa"
+kde_theme = "Kanagawa"
+gtk_theme = "Kanagawa"

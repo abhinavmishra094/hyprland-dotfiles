@@ -1,0 +1,64 @@
+# Catppuccin Latte Theme - Static Colors
+name = "catppuccin-latte"
+display_name = "Catppuccin Latte"
+
+# Base colors
+background = "#eff1f5"
+foreground = "#4c4f69"
+cursor = "#dc8a78"
+selection_background = "#ccd0da"
+selection_foreground = "#4c4f69"
+
+# Material You compatible palette
+primary = "#8839ef"
+on_primary = "#eff1f5"
+primary_container = "#a48cf7"
+on_primary_container = "#4c4f69"
+
+secondary = "#40a02b"
+on_secondary = "#eff1f5"
+secondary_container = "#80c060"
+on_secondary_container = "#4c4f69"
+
+tertiary = "#179299"
+on_tertiary = "#eff1f5"
+tertiary_container = "#5abfb8"
+on_tertiary_container = "#4c4f69"
+
+error = "#d20f39"
+on_error = "#eff1f5"
+error_container = "#e6456a"
+on_error_container = "#4c4f69"
+
+surface = "#e6e9ef"
+on_surface = "#4c4f69"
+surface_variant = "#ccd0da"
+on_surface_variant = "#6c6f85"
+
+outline = "#bcc0cc"
+outline_variant = "#acb0be"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Catppuccin Latte palette)
+color0 = "#5c5f77"
+color1 = "#d20f39"
+color2 = "#40a02b"
+color3 = "#df8e1d"
+color4 = "#1e66f5"
+color5 = "#8839ef"
+color6 = "#179299"
+color7 = "#acb0be"
+color8 = "#6c6f85"
+color9 = "#d20f39"
+color10 = "#40a02b"
+color11 = "#df8e1d"
+color12 = "#1e66f5"
+color13 = "#8839ef"
+color14 = "#179299"
+color15 = "#bcc0cc"
+
+# Application theme names
+zed_theme = "Catppuccin Latte"
+kde_theme = "Catppuccin"
+gtk_theme = "Catppuccin"

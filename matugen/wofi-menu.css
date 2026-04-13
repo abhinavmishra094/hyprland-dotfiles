@@ -1,0 +1,73 @@
+/* Wofi menu style for Matugen Theme Selector */
+
+window {
+    margin: 0px;
+    border: 2px solid @primary;
+    border-radius: 12px;
+    background-color: @background;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+}
+
+#input {
+    margin: 12px;
+    padding: 10px 16px;
+    border: 1px solid @outline;
+    border-radius: 8px;
+    background-color: @surface;
+    color: @on-surface;
+}
+
+#input:focus {
+    border-color: @primary;
+}
+
+#inner-box {
+    margin: 8px 12px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0;
+    background-color: transparent;
+}
+
+#text {
+    margin: 4px 8px;
+    color: @on-surface;
+}
+
+#text:selected {
+    color: @on-primary-container;
+}
+
+#entry {
+    padding: 8px 12px;
+    margin: 4px 0;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: @primary-container;
+    border: 1px solid @primary;
+}
+
+#entry:hover {
+    background-color: @surface-variant;
+}
+
+#img {
+    margin-right: 12px;
+}
+
+/* Prompt styling */
+#prompt {
+    color: @primary;
+    font-weight: bold;
+}

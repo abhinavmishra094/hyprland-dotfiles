@@ -1,0 +1,14 @@
+[Unit]
+Description=Hyprland session services
+BindsTo=graphical-session.target
+Wants=graphical-session.target
+Wants=dunst.service
+Wants=plasma-polkit-agent.service
+Wants=waybar.service
+Wants=sunshine.service
+Wants=app-bitwarden@autostart.service
+Wants=app-blueman@autostart.service
+Wants=app-com.github.hluk.copyq@autostart.service
+Wants=app-ferdium@autostart.service
+Wants=app-nm\x2dapplet@autostart.service
+After=graphical-session-pre.target

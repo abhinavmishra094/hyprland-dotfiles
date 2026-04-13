@@ -1,0 +1,64 @@
+# Solarized Dark Theme - Static Colors
+name = "solarized-dark"
+display_name = "Solarized Dark"
+
+# Base colors
+background = "#002b36"
+foreground = "#839496"
+cursor = "#93a1a1"
+selection_background = "#073642"
+selection_foreground = "#93a1a1"
+
+# Material You compatible palette
+primary = "#268bd2"
+on_primary = "#002b36"
+primary_container = "#5cb3e8"
+on_primary_container = "#002b36"
+
+secondary = "#859900"
+on_secondary = "#002b36"
+secondary_container = "#b3c94a"
+on_secondary_container = "#002b36"
+
+tertiary = "#d33682"
+on_tertiary = "#002b36"
+tertiary_container = "#f070a8"
+on_tertiary_container = "#002b36"
+
+error = "#dc322f"
+on_error = "#002b36"
+error_container = "#ff6b68"
+on_error_container = "#002b36"
+
+surface = "#073642"
+on_surface = "#839496"
+surface_variant = "#586e75"
+on_surface_variant = "#a0b0b5"
+
+outline = "#586e75"
+outline_variant = "#657b83"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Solarized palette)
+color0 = "#073642"
+color1 = "#dc322f"
+color2 = "#859900"
+color3 = "#b58900"
+color4 = "#268bd2"
+color5 = "#d33682"
+color6 = "#2aa198"
+color7 = "#eee8d5"
+color8 = "#002b36"
+color9 = "#cb4b16"
+color10 = "#586e75"
+color11 = "#657b83"
+color12 = "#839496"
+color13 = "#6c71c4"
+color14 = "#93a1a1"
+color15 = "#fdf6e3"
+
+# Application theme names
+zed_theme = "Solarized Dark"
+kde_theme = "Solarized"
+gtk_theme = "Solarized"

@@ -1,0 +1,91 @@
+[config]
+template_dir = "~/.config/matugen/templates"
+scheme = "material"
+mode = "dark"
+contrast = 0.0
+
+[templates]
+
+# Kitty
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty-static.conf"
+output_path = "~/.config/kitty/themes/matugen-static.conf"
+post_hook = "kitty +kitten themes --reload-in=all matugen-static 2>/dev/null || true"
+
+# Alacritty
+[templates.alacritty]
+input_path = "~/.config/matugen/templates/alacritty-static.toml"
+output_path = "~/.config/alacritty/colors.toml"
+
+# Ghostty
+[templates.ghostty]
+input_path = "~/.config/matugen/templates/ghostty-static"
+output_path = "~/.config/ghostty/themes/Matugen"
+
+# GTK3
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk-colors-static.css"
+output_path = "~/.config/gtk-3.0/colors.css"
+post_hook = "gsettings set org.gnome.desktop.interface color-scheme prefer-dark 2>/dev/null; gsettings set org.gnome.desktop.interface gtk-theme \"\" 2>/dev/null; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark 2>/dev/null || true"
+
+# GTK4
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk-colors-static.css"
+output_path = "~/.config/gtk-4.0/colors.css"
+
+# Hyprland
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland-static.conf"
+output_path = "~/.config/hypr/colors_matugen.conf"
+post_hook = "hyprctl keyword source ~/.config/hypr/colors_matugen.conf"
+
+# Tmux
+[templates.tmux]
+input_path = "~/.config/matugen/templates/tmux-static.conf"
+output_path = "~/.config/tmux/matugen.conf"
+
+# Firefox
+[templates.firefox]
+input_path = "~/.config/matugen/templates/firefox-static.css"
+output_path = "~/.mozilla/firefox/matugen/chrome/userChrome.css"
+
+# Vivaldi
+[templates.vivaldi]
+input_path = "~/.config/matugen/templates/vivaldi-static.css"
+output_path = "~/.config/vivaldi/matugen.css"
+
+# Zed
+[templates.zed]
+input_path = "~/.config/matugen/templates/zed-static.json"
+output_path = "~/.config/zed/themes/matugen-static.json"
+
+# Qt5ct
+[templates.qt5ct]
+input_path = "~/.config/matugen/templates/qt-colors-static.conf"
+output_path = "~/.config/qt5ct/colors/matugen.conf"
+
+# Qt6ct
+[templates.qt6ct]
+input_path = "~/.config/matugen/templates/qt-colors-static.conf"
+output_path = "~/.config/qt6ct/colors/matugen.conf"
+
+# KDE globals
+[templates.kdeglobals]
+input_path = "~/.config/matugen/templates/kdeglobals"
+output_path = "~/.config/kdeglobals"
+
+# Kvantum
+[templates.kvantum]
+input_path = "~/.config/matugen/templates/kvantum.kvconfig"
+output_path = "~/.config/Kvantum/kvantum.kvconfig"
+
+# Mako
+[templates.mako]
+input_path = "~/.config/matugen/templates/mako.conf"
+output_path = "~/.config/mako/config"
+post_hook = "makoctl reload 2>/dev/null || true"
+
+# Opencode
+[templates.opencode]
+input_path = "~/.config/matugen/templates/opencode-theme.json"
+output_path = "~/.config/opencode/themes/matugen.json"

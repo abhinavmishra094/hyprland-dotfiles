@@ -1,0 +1,64 @@
+# Flexoki Light Theme - Static Colors
+name = "flexoki-light"
+display_name = "Flexoki Light"
+
+# Base colors
+background = "#fffcf0"
+foreground = "#100f0f"
+cursor = "#100f0f"
+selection_background = "#e6e4d9"
+selection_foreground = "#100f0f"
+
+# Material You compatible palette
+primary = "#205ea6"
+on_primary = "#fffcf0"
+primary_container = "#4385be"
+on_primary_container = "#100f0f"
+
+secondary = "#66800b"
+on_secondary = "#fffcf0"
+secondary_container = "#879a39"
+on_secondary_container = "#100f0f"
+
+tertiary = "#a02f6f"
+on_tertiary = "#fffcf0"
+tertiary_container = "#ce5d97"
+on_tertiary_container = "#100f0f"
+
+error = "#af3029"
+on_error = "#fffcf0"
+error_container = "#d14d41"
+on_error_container = "#100f0f"
+
+surface = "#f2f0e5"
+on_surface = "#100f0f"
+surface_variant = "#e6e4d9"
+on_surface_variant = "#6f6e69"
+
+outline = "#b7b5ac"
+outline_variant = "#cecdc3"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Flexoki palette)
+color0 = "#100f0f"
+color1 = "#af3029"
+color2 = "#66800b"
+color3 = "#ad8301"
+color4 = "#205ea6"
+color5 = "#a02f6f"
+color6 = "#24837b"
+color7 = "#f2f0e5"
+color8 = "#6f6e69"
+color9 = "#d14d41"
+color10 = "#879a39"
+color11 = "#d0a215"
+color12 = "#4385be"
+color13 = "#ce5d97"
+color14 = "#3aa99f"
+color15 = "#fffcf0"
+
+# Application theme names
+zed_theme = "Flexoki Light"
+kde_theme = "Flexoki"
+gtk_theme = "Flexoki"

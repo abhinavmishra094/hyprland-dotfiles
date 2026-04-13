@@ -1,0 +1,64 @@
+# Vanta Black Theme - Static Colors
+name = "vanta-black"
+display_name = "VantaBlack"
+
+# Base colors
+background = "#000000"
+foreground = "#ffffff"
+cursor = "#ffffff"
+selection_background = "#333333"
+selection_foreground = "#ffffff"
+
+# Material You compatible palette
+primary = "#ffffff"
+on_primary = "#000000"
+primary_container = "#cccccc"
+on_primary_container = "#000000"
+
+secondary = "#888888"
+on_secondary = "#000000"
+secondary_container = "#aaaaaa"
+on_secondary_container = "#000000"
+
+tertiary = "#666666"
+on_tertiary = "#ffffff"
+tertiary_container = "#888888"
+on_tertiary_container = "#000000"
+
+error = "#ff0000"
+on_error = "#000000"
+error_container = "#ff4444"
+on_error_container = "#000000"
+
+surface = "#111111"
+on_surface = "#ffffff"
+surface_variant = "#222222"
+on_surface_variant = "#aaaaaa"
+
+outline = "#444444"
+outline_variant = "#555555"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Monochrome palette)
+color0 = "#000000"
+color1 = "#ff0000"
+color2 = "#00ff00"
+color3 = "#ffff00"
+color4 = "#0000ff"
+color5 = "#ff00ff"
+color6 = "#00ffff"
+color7 = "#ffffff"
+color8 = "#555555"
+color9 = "#ff4444"
+color10 = "#44ff44"
+color11 = "#ffff44"
+color12 = "#4444ff"
+color13 = "#ff44ff"
+color14 = "#44ffff"
+color15 = "#ffffff"
+
+# Application theme names
+zed_theme = "VantaBlack"
+kde_theme = "VantaBlack"
+gtk_theme = "VantaBlack"

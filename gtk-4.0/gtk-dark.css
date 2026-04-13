@@ -1,0 +1,309 @@
+@import 'colors.css';
+
+/* main window */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* content area */
+.view {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+headerbar,
+headerbar .background,
+.header-bar,
+.header-bar .background,
+.titlebar,
+.titlebar .background,
+.top-bar,
+.top-bar .background,
+windowhandle,
+windowhandle > box,
+windowhandle > box > headerbar,
+windowhandle > box > headerbar .background {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+headerbar:backdrop,
+headerbar:backdrop .background,
+.header-bar:backdrop,
+.header-bar:backdrop .background,
+.titlebar:backdrop,
+.titlebar:backdrop .background,
+.top-bar:backdrop,
+.top-bar:backdrop .background,
+windowhandle:backdrop,
+windowhandle > box:backdrop,
+windowhandle > box > headerbar:backdrop,
+windowhandle > box > headerbar:backdrop .background {
+    background-color: @headerbar_backdrop_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+}
+
+/* HandBrake uses a GtkBox toolbar instead of a headerbar */
+.toolbar,
+box.toolbar,
+box.large-icons.toolbar,
+toolbar,
+toolbar > box,
+toolbar > box > button,
+toolbar > box > menubutton,
+toolbar > box > togglebutton,
+toolbar > box > splitbutton,
+toolbar > box > entry,
+toolbar > box > spinbutton,
+toolbar > box > combobox,
+toolbar > box > dropdown {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+/* Exhaustive toolbar coverage for GTK4 apps (including HandBrake) */
+box.toolbar > box,
+box.toolbar > revealer,
+box.toolbar > revealer > box,
+box.toolbar > *,
+box.toolbar button,
+box.toolbar menubutton,
+box.toolbar togglebutton,
+box.toolbar splitbutton,
+box.toolbar .linked > button,
+box.toolbar .linked > menubutton,
+box.toolbar .linked > togglebutton,
+box.toolbar entry,
+box.toolbar spinbutton,
+box.toolbar combobox,
+box.toolbar dropdown,
+box.toolbar textview,
+box.toolbar *:not(separator),
+toolbar button,
+toolbar menubutton,
+toolbar togglebutton,
+toolbar splitbutton,
+toolbar entry,
+toolbar spinbutton,
+toolbar combobox,
+toolbar dropdown,
+toolbar textview,
+toolbar *:not(separator),
+headerbar button,
+headerbar menubutton,
+headerbar togglebutton,
+headerbar splitbutton,
+headerbar entry,
+headerbar spinbutton,
+headerbar combobox,
+headerbar dropdown,
+headerbar textview,
+headerbar *:not(separator),
+windowhandle *:not(separator),
+.titlebar *:not(separator),
+.top-bar *:not(separator) {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @headerbar_border_color;
+    box-shadow: none;
+}
+
+/* GTK4 editable widgets use a text subnode; style both parent + text to avoid light fallback. */
+entry,
+entry text,
+spinbutton,
+spinbutton text,
+combobox entry,
+combobox entry text,
+dropdown,
+toolbar entry,
+toolbar entry text,
+toolbar spinbutton,
+toolbar spinbutton text,
+headerbar entry,
+headerbar entry text,
+headerbar spinbutton,
+headerbar spinbutton text,
+#_toolbar1 entry,
+#_toolbar1 entry text,
+#_toolbar1 spinbutton,
+#_toolbar1 spinbutton text {
+    background-color: @view_bg_color;
+    background-image: none;
+    color: @view_fg_color;
+    caret-color: @view_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+box.toolbar button:hover,
+box.toolbar menubutton:hover,
+box.toolbar togglebutton:hover,
+box.toolbar splitbutton:hover,
+box.toolbar button:checked,
+box.toolbar menubutton:checked,
+box.toolbar togglebutton:checked,
+box.toolbar splitbutton:checked,
+box.toolbar button:active,
+box.toolbar menubutton:active,
+box.toolbar togglebutton:active,
+box.toolbar splitbutton:active,
+toolbar button:hover,
+toolbar menubutton:hover,
+toolbar togglebutton:hover,
+toolbar splitbutton:hover,
+toolbar button:checked,
+toolbar menubutton:checked,
+toolbar togglebutton:checked,
+toolbar splitbutton:checked,
+toolbar button:active,
+toolbar menubutton:active,
+toolbar togglebutton:active,
+toolbar splitbutton:active,
+toolbar entry:focus,
+toolbar spinbutton:focus,
+toolbar combobox:focus,
+toolbar dropdown:focus,
+box.toolbar entry:focus,
+box.toolbar spinbutton:focus,
+box.toolbar combobox:focus,
+box.toolbar dropdown:focus,
+headerbar button:hover,
+headerbar menubutton:hover,
+headerbar togglebutton:hover,
+headerbar splitbutton:hover,
+headerbar button:checked,
+headerbar menubutton:checked,
+headerbar togglebutton:checked,
+headerbar splitbutton:checked,
+headerbar button:active,
+headerbar menubutton:active,
+headerbar togglebutton:active,
+headerbar splitbutton:active,
+headerbar entry:focus,
+headerbar spinbutton:focus,
+headerbar combobox:focus,
+headerbar dropdown:focus,
+#_toolbar1 entry:focus,
+#_toolbar1 spinbutton:focus,
+#_toolbar1 combobox:focus,
+#_toolbar1 dropdown:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+box.toolbar button:backdrop,
+box.toolbar menubutton:backdrop,
+box.toolbar togglebutton:backdrop,
+box.toolbar splitbutton:backdrop,
+toolbar button:backdrop,
+toolbar menubutton:backdrop,
+toolbar togglebutton:backdrop,
+toolbar splitbutton:backdrop,
+toolbar entry:backdrop,
+toolbar spinbutton:backdrop,
+toolbar combobox:backdrop,
+toolbar dropdown:backdrop,
+box.toolbar entry:backdrop,
+box.toolbar spinbutton:backdrop,
+box.toolbar combobox:backdrop,
+box.toolbar dropdown:backdrop,
+headerbar button:backdrop,
+headerbar menubutton:backdrop,
+headerbar togglebutton:backdrop,
+headerbar splitbutton:backdrop,
+headerbar entry:backdrop,
+headerbar spinbutton:backdrop,
+headerbar combobox:backdrop,
+headerbar dropdown:backdrop,
+windowhandle *:backdrop,
+.titlebar *:backdrop,
+.top-bar *:backdrop {
+    background-color: @headerbar_backdrop_color;
+    color: @theme_unfocused_fg_color;
+}
+
+/* HandBrake-specific toolbar id from GTK inspector */
+#_toolbar1,
+#_toolbar1 > box,
+#_toolbar1 > *,
+#_toolbar1 button,
+#_toolbar1 menubutton,
+#_toolbar1 togglebutton,
+#_toolbar1 splitbutton,
+#_toolbar1 entry,
+#_toolbar1 spinbutton,
+#_toolbar1 combobox,
+#_toolbar1 dropdown,
+#_toolbar1 textview,
+#_toolbar1 *:not(separator) {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+#_toolbar1 button:hover,
+#_toolbar1 menubutton:hover,
+#_toolbar1 togglebutton:hover,
+#_toolbar1 button:checked,
+#_toolbar1 menubutton:checked,
+#_toolbar1 togglebutton:checked,
+#_toolbar1 button:active,
+#_toolbar1 menubutton:active,
+#_toolbar1 togglebutton:active,
+#_toolbar1 splitbutton:hover,
+#_toolbar1 splitbutton:checked,
+#_toolbar1 splitbutton:active {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+#_toolbar1 button:backdrop,
+#_toolbar1 menubutton:backdrop,
+#_toolbar1 togglebutton:backdrop,
+#_toolbar1 splitbutton:backdrop,
+#_toolbar1 entry:backdrop,
+#_toolbar1 spinbutton:backdrop,
+#_toolbar1 combobox:backdrop,
+#_toolbar1 dropdown:backdrop {
+    background-color: @headerbar_backdrop_color;
+    color: @theme_unfocused_fg_color;
+}
+
+/* fallback for apps using menubar-like top rows in GtkBox */
+box.toolbar > menubar,
+menubar,
+menubar > item,
+menubar > item > label {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+/* menus and popovers */
+menu,
+popover {
+    background-color: @popover_bg_color;
+    color: @popover_fg_color;
+}
+
+menuitem,
+modelbutton {
+    background-color: transparent;
+    color: @popover_fg_color;
+}
+
+menuitem:hover,
+modelbutton:hover,
+menuitem:selected,
+modelbutton:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}

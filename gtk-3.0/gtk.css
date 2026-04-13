@@ -1,0 +1,237 @@
+@import url("colors.css");
+
+/* main window */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* content area */
+.view {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+toolbar,
+.primary-toolbar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    background-image: none;
+    border: none;
+}
+
+toolbar entry,
+.primary-toolbar entry,
+entry {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border-color: @border_color;
+}
+
+/* focus state */
+toolbar entry:focus,
+.primary-toolbar entry:focus,
+entry:focus {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+    border-color: @accent_color;
+}
+
+/* inactive window */
+toolbar entry:backdrop,
+entry:backdrop {
+    background-color: @window_bg_color;
+    color: @theme_unfocused_fg_color;
+}
+
+/* ACTIVE headerbar */
+.titlebar,
+headerbar,
+.titlebar .background,
+headerbar .background {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @headerbar_border_color;
+}
+
+/* INACTIVE headerbar */
+.titlebar:backdrop,
+headerbar:backdrop,
+.titlebar:backdrop .background,
+headerbar:backdrop .background {
+    background-color: @headerbar_backdrop_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+}
+
+/* ------------------------------------------------ */
+/* MENUS                                            */
+/* ------------------------------------------------ */
+
+/* dropdown / right-click menus */
+
+menubar,
+.menubar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    border: none;
+}
+
+menu,
+popover {
+    background-color: @popover_bg_color;
+    color: @popover_fg_color;
+}
+
+/* menu items */
+menuitem,
+modelbutton {
+    background-color: transparent;
+    color: @popover_fg_color;
+}
+
+/* hovered menu item */
+menuitem:hover,
+modelbutton:hover {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/* active menu item */
+menuitem:selected,
+modelbutton:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/* menubar (File Edit View etc) */
+menubar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+/* hovered menubar item */
+menubar > menuitem:hover {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+treeview header {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+treeview header button {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+    border-color: @border_color;
+}
+
+/* hover */
+treeview header button:hover {
+    background-color: shade(@headerbar_bg_color, 1.05);
+}
+
+/* active sort column */
+treeview header button:checked {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/* ------------------------------------------------ */
+/* DIALOG WINDOWS                                   */
+/* ------------------------------------------------ */
+
+/* main dialog window */
+dialog {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+/* message dialogs */
+messagedialog {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+/* dialog content */
+dialog .content-area,
+dialog box {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+/* dialog headerbar */
+dialog headerbar,
+dialog .titlebar {
+    background-color: @headerbar_bg_color;
+    background-image: none;
+    color: @headerbar_fg_color;
+}
+
+/* inactive dialog headerbar */
+dialog headerbar:backdrop,
+dialog .titlebar:backdrop {
+    background-color: @headerbar_backdrop_color;
+    color: @headerbar_fg_color;
+}
+
+/* dialog buttons */
+dialog button {
+    background-color: @theme_button_bg_color;
+    color: @theme_button_fg_color;
+}
+
+/* destructive buttons */
+dialog button.destructive-action {
+    background-color: @destructive_bg_color;
+    color: @destructive_fg_color;
+}
+
+/* ------------------------------------------------ */
+/* FILE CHOOSER DIALOG                              */
+/* ------------------------------------------------ */
+
+filechooser,
+dialog filechooser {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+/* sidebar (Home / Documents / Downloads etc) */
+placessidebar,
+.sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+/* sidebar rows */
+placessidebar row {
+    background-color: transparent;
+    color: @sidebar_fg_color;
+}
+
+/* sidebar hover */
+placessidebar row:hover {
+    background-color: shade(@sidebar_bg_color, 1.05);
+}
+
+/* sidebar selected */
+placessidebar row:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/* file list inside dialog */
+filechooser treeview {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+/* selected file */
+filechooser treeview row:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}

@@ -1,0 +1,64 @@
+# Nord Theme - Static Colors
+name = "nord"
+display_name = "Nord"
+
+# Base colors
+background = "#2e3440"
+foreground = "#d8dee9"
+cursor = "#d8dee9"
+selection_background = "#434c5e"
+selection_foreground = "#d8dee9"
+
+# Material You compatible palette
+primary = "#88c0d0"
+on_primary = "#2e3440"
+primary_container = "#a3d6e6"
+on_primary_container = "#2e3440"
+
+secondary = "#a3be8c"
+on_secondary = "#2e3440"
+secondary_container = "#c0d6a6"
+on_secondary_container = "#2e3440"
+
+tertiary = "#b48ead"
+on_tertiary = "#2e3440"
+tertiary_container = "#d0b0c8"
+on_tertiary_container = "#2e3440"
+
+error = "#bf616a"
+on_error = "#2e3440"
+error_container = "#d48a92"
+on_error_container = "#2e3440"
+
+surface = "#3b4252"
+on_surface = "#d8dee9"
+surface_variant = "#434c5e"
+on_surface_variant = "#a3be8c"
+
+outline = "#4c566a"
+outline_variant = "#616e88"
+shadow = "#000000"
+scrim = "#000000"
+
+# Terminal colors (Nord palette)
+color0 = "#3b4252"
+color1 = "#bf616a"
+color2 = "#a3be8c"
+color3 = "#ebcb8b"
+color4 = "#81a1c1"
+color5 = "#b48ead"
+color6 = "#88c0d0"
+color7 = "#e5e9f0"
+color8 = "#4c566a"
+color9 = "#bf616a"
+color10 = "#a3be8c"
+color11 = "#ebcb8b"
+color12 = "#81a1c1"
+color13 = "#b48ead"
+color14 = "#8fbcbb"
+color15 = "#eceff4"
+
+# Application theme names
+zed_theme = "Nord"
+kde_theme = "Nord"
+gtk_theme = "Nord"
