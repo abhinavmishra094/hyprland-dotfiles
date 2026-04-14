@@ -33,6 +33,16 @@ post_hook = "gsettings set org.gnome.desktop.interface color-scheme prefer-dark 
 input_path = "~/.config/matugen/templates/gtk-colors-static.css"
 output_path = "~/.config/gtk-4.0/colors.css"
 
+# GTK3 custom overrides (imports colors.css)
+[templates.gtk3_css]
+input_path = "~/.config/matugen/templates/gtk-3-custom.css"
+output_path = "~/.config/gtk-3.0/gtk.css"
+
+# GTK4 custom overrides (imports colors.css)
+[templates.gtk4_css]
+input_path = "~/.config/matugen/templates/gtk-4-custom.css"
+output_path = "~/.config/gtk-4.0/gtk.css"
+
 # Hyprland
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-static.conf"
