@@ -47,7 +47,7 @@ output_path = "~/.config/gtk-4.0/gtk.css"
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-static.conf"
 output_path = "~/.config/hypr/colors_matugen.conf"
-post_hook = "hyprctl keyword source ~/.config/hypr/colors_matugen.conf"
+post_hook = "hyprctl keyword source ~/.config/hypr/colors_matugen.conf 2>/dev/null || true; systemctl --user restart quickshell.service 2>/dev/null || true"
 
 # Tmux
 [templates.tmux]

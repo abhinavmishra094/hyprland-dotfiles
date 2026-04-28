@@ -88,7 +88,7 @@ post_hook = 'dunstctl reload 2>/dev/null || true'
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland.conf'
 output_path = '~/.config/hypr/colors_matugen.conf'
-post_hook = 'hyprctl keyword source ~/.config/hypr/colors_matugen.conf 2>/dev/null || true'
+post_hook = 'hyprctl keyword source ~/.config/hypr/colors_matugen.conf 2>/dev/null || true; systemctl --user restart quickshell.service 2>/dev/null || true'
 
 # Mako
 [templates.mako]
