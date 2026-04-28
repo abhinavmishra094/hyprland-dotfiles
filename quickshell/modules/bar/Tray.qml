@@ -25,6 +25,11 @@ Chip {
             delegate: Item {
                 required property var modelData
 
+                function panelPoint(localX, localY) {
+                    const target = root.panelWindow.contentItem || root.panelWindow;
+                    return mapToItem(target, localX, localY);
+                }
+
                 implicitWidth: Theme.trayIconSize
                 implicitHeight: Theme.trayIconSize
 
@@ -46,14 +51,18 @@ Chip {
                             return ;
 
                         if (mouse.button === Qt.LeftButton) {
-                            if (modelData.onlyMenu && modelData.hasMenu)
-                                modelData.display(root.panelWindow, mouse.x, mouse.y);
-                            else
+                            if (modelData.onlyMenu && modelData.hasMenu) {
+                                const point = parent.panelPoint(0, parent.height);
+                                modelData.display(root.panelWindow, point.x, point.y);
+                            } else {
                                 modelData.activate();
-                        } else if (mouse.button === Qt.MiddleButton)
+                            }
+                        } else if (mouse.button === Qt.MiddleButton) {
                             modelData.secondaryActivate();
-                        else if (mouse.button === Qt.RightButton && modelData.hasMenu)
-                            modelData.display(root.panelWindow, mouse.x, mouse.y);
+                        } else if (mouse.button === Qt.RightButton && modelData.hasMenu) {
+                            const point = parent.panelPoint(0, parent.height);
+                            modelData.display(root.panelWindow, point.x, point.y);
+                        }
                     }
                     onWheel: function(wheel) {
                         if (!modelData)
