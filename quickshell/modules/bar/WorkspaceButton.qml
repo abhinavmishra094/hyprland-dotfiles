@@ -23,7 +23,7 @@ Rectangle {
 
         anchors.centerIn: parent
         text: workspaceButton.label
-        color: urgent ? "#11111b" : (active || focused || hovered ? Theme.foreground : Theme.mutedForeground)
+        color: urgent ? Theme.urgentWorkspaceForeground : ((active || focused || hovered) ? Theme.focusedWorkspaceForeground : Theme.mutedForeground)
         font.family: Theme.fontFamily
         font.pixelSize: Theme.fontSize
         font.weight: Theme.fontWeight

@@ -299,7 +299,7 @@ Item {
                                 width: 32
                                 height: 32
                                 radius: 6
-                                color: prevMouseArea.containsMouse ? Qt.rgba(1, 1, 1, 0.16) : "transparent"
+                                color: prevMouseArea.containsMouse ? Theme.buttonHover : "transparent"
 
                                 MouseArea {
                                     id: prevMouseArea
@@ -335,7 +335,7 @@ Item {
                                 width: 32
                                 height: 32
                                 radius: 6
-                                color: nextMouseArea.containsMouse ? Qt.rgba(1, 1, 1, 0.16) : "transparent"
+                                color: nextMouseArea.containsMouse ? Theme.buttonHover : "transparent"
 
                                 MouseArea {
                                     id: nextMouseArea
@@ -394,9 +394,9 @@ Item {
                                     width: (parent.width - 24) / 7
                                     height: 35
                                     radius: 8
-                                    color: cellMouse.containsMouse && cellData.day !== "" ? Qt.rgba(1, 1, 1, 0.1) : (cellData.today ? Qt.rgba(0.92, 0.63, 0.67, 0.3) : "transparent")
+                                    color: cellMouse.containsMouse && cellData.day !== "" ? Theme.dayHover : (cellData.today ? Theme.todayFill : "transparent")
                                     border.width: cellData.today ? 1 : 0
-                                    border.color: Qt.rgba(0.92, 0.63, 0.67, 0.55)
+                                    border.color: Theme.todayBorder
 
                                     MouseArea {
                                         id: cellMouse

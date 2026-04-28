@@ -49,6 +49,11 @@ input_path = "~/.config/matugen/templates/hyprland-static.conf"
 output_path = "~/.config/hypr/colors_matugen.conf"
 post_hook = "hyprctl keyword source ~/.config/hypr/colors_matugen.conf 2>/dev/null || true; systemctl --user restart quickshell.service 2>/dev/null || true"
 
+# Quickshell
+[templates.quickshell]
+input_path = "~/.config/matugen/templates/quickshell-theme.qml"
+output_path = "~/.config/quickshell/theme/GeneratedTheme.qml"
+
 # Tmux
 [templates.tmux]
 input_path = "~/.config/matugen/templates/tmux-static.conf"
