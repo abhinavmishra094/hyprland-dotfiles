@@ -25,7 +25,6 @@ OFFICIAL_PACKAGES=(
   hyprpicker
   jq
   kitty
-  kvantum
   libnotify
   matugen
   network-manager-applet
@@ -82,7 +81,6 @@ CONFIG_DIRS=(
   matugen
   qt5ct
   qt6ct
-  Kvantum
   nwg-look
   waypaper
   wayvnc
@@ -92,10 +90,11 @@ CONFIG_DIRS=(
 
 CONFIG_FILES=(
   mimeapps.list
-  autostart/bitwarden.desktop
   autostart/com.github.hluk.copyq.desktop
   autostart/ferdium.desktop
   autostart/OpenRGB.desktop
+  kdeglobals
+  systemd/user/bitwarden.service
   systemd/user/hyprland-session.target
   systemd/user/sunshine.service
   wayvnc/config.example
@@ -220,6 +219,16 @@ setup_systemd_user() {
   systemctl --user enable gnome-keyring-daemon.socket hypridle.service >/dev/null
 }
 
+setup_flatpak_theming() {
+  local script_path="$REPO_ROOT/scripts/apply-flatpak-theme-overrides.sh"
+
+  [[ -x "$script_path" ]] || return 0
+  command -v flatpak >/dev/null 2>&1 || return 0
+
+  log "Applying Flatpak theme overrides"
+  "$script_path" || warn "Failed to apply Flatpak theme overrides"
+}
+
 setup_hyprpm() {
   command -v hyprpm >/dev/null 2>&1 || return 0
 
@@ -274,6 +283,7 @@ main() {
   done
 
   setup_systemd_user
+  setup_flatpak_theming
   setup_hyprpm
   apply_initial_theme
 

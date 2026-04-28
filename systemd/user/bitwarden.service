@@ -1,0 +1,13 @@
+[Unit]
+Description=Bitwarden desktop
+PartOf=graphical-session.target
+After=graphical-session-pre.target waybar.service
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/bash /home/abhinav/.local/bin/start-bitwarden.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=hyprland-session.target
