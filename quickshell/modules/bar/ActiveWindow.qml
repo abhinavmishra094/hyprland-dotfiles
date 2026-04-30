@@ -8,13 +8,16 @@ Chip {
     id: root
 
     property string activeTitle: ""
+    property int maxWidth: 560
+    readonly property int minChipWidth: Theme.chipHeight
 
     function refreshTitle() {
         activeWindowProcess.running = false;
         activeWindowProcess.running = true;
     }
 
-    implicitWidth: title.implicitWidth + Theme.chipPadding * 2
+    implicitWidth: Math.max(minChipWidth, title.implicitWidth + Theme.chipPadding * 2)
+    width: Math.min(maxWidth, implicitWidth)
     Component.onCompleted: refreshTitle()
 
     Connections {

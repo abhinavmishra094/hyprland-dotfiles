@@ -55,7 +55,7 @@ PanelWindow {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: Theme.outerMargin
-            width: Math.min(560, parent.width - 240)
+            maxWidth: Math.min(560, parent.width - 240)
         }
 
     }
