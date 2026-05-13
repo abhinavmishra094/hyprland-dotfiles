@@ -307,3 +307,63 @@ modelbutton:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
 }
+
+/* ------------------------------------------------ */
+/* FILE CHOOSER DIALOG                              */
+/* ------------------------------------------------ */
+
+filechooser,
+filechooserwidget,
+filechooserdialog,
+window.filechooser,
+window.filechooser.background,
+window.background filechooser,
+window.background filechooserwidget {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+filechooser box,
+filechooserwidget box,
+filechooser grid,
+filechooserwidget grid,
+filechooser paned,
+filechooserwidget paned,
+filechooser stack,
+filechooserwidget stack,
+filechooser scrolledwindow,
+filechooserwidget scrolledwindow,
+filechooser viewport,
+filechooserwidget viewport,
+filechooser listview,
+filechooserwidget listview,
+filechooser columnview,
+filechooserwidget columnview {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+placessidebar,
+placessidebar list,
+placessidebar row,
+.sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+filechooser listview row,
+filechooserwidget listview row,
+filechooser columnview row,
+filechooserwidget columnview row {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+filechooser listview row:selected,
+filechooserwidget listview row:selected,
+filechooser columnview row:selected,
+filechooserwidget columnview row:selected,
+placessidebar row:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}

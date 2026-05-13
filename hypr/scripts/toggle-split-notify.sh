@@ -3,5 +3,5 @@
 LOGFILE=/tmp/togglesplit-debug.log
 echo "=== $(date) ===" >> $LOGFILE
 echo "Running togglesplit..." >> $LOGFILE
-hyprctl dispatch layoutmsg togglesplit >> $LOGFILE 2>&1
+hyprctl dispatch 'hl.dsp.layout("togglesplit")' >> $LOGFILE 2>&1
 echo "Exit code: $?" >> $LOGFILE

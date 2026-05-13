@@ -1,0 +1,6 @@
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_DATA_DIRS", "/usr/local/share:/usr/share:/var/lib/flatpak/exports/share:/home/abhinav/.local/share/flatpak/exports/share")
+hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
+hl.env("GTK_APPLICATION_PREFER_DARK_THEME", "1")

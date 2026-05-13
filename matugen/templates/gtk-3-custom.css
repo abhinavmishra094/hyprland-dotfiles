@@ -245,7 +245,27 @@ dialog button.destructive-action {
 /* ------------------------------------------------ */
 
 filechooser,
-dialog filechooser {
+filechooserwidget,
+dialog filechooser,
+dialog filechooserwidget,
+window.background filechooser,
+window.background filechooserwidget {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+filechooser box,
+filechooserwidget box,
+filechooser grid,
+filechooserwidget grid,
+filechooser paned,
+filechooserwidget paned,
+filechooser stack,
+filechooserwidget stack,
+filechooser scrolledwindow,
+filechooserwidget scrolledwindow,
+filechooser viewport,
+filechooserwidget viewport {
     background-color: @dialog_bg_color;
     color: @dialog_fg_color;
 }
@@ -276,6 +296,14 @@ placessidebar row:selected {
 
 /* file list inside dialog */
 filechooser treeview {
+    background-color: @view_bg_color;
+    color: @view_fg_color;
+}
+
+filechooser list,
+filechooserwidget list,
+filechooser row,
+filechooserwidget row {
     background-color: @view_bg_color;
     color: @view_fg_color;
 }

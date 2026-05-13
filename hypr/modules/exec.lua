@@ -1,0 +1,24 @@
+hl.permission({
+  binary = "/usr/(bin|local/bin)/hyprpm",
+  type = "plugin",
+  mode = "allow",
+})
+
+hl.on("hyprland.start", function()
+  hl.exec_cmd("rm -f ~/.config/hypr/hyprland.conf")
+  hl.exec_cmd("dbus-update-activation-environment --systemd --all")
+  hl.exec_cmd("systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP HYPRLAND_INSTANCE_SIGNATURE SSH_AUTH_SOCK")
+  hl.exec_cmd("wl-clipboard-history -t")
+  hl.exec_cmd("systemctl --user start gnome-keyring-daemon.service")
+  hl.exec_cmd("systemctl --user start hyprland-session.target")
+  hl.exec_cmd("~/.config/hypr/xdg-portal-hyprland")
+  hl.exec_cmd("wlsunset -S 9:00 -s 19:30")
+  hl.exec_cmd("awww-daemon")
+  hl.exec_cmd("waypaper --restore")
+  hl.exec_cmd("hyprlock")
+  hl.exec_cmd("wayvnc 0.0.0.0 5900")
+  hl.exec_cmd("steam -silent")
+  hl.exec_cmd("openrgb -c 000000")
+  hl.exec_cmd("hyprpm reload")
+  hl.exec_cmd("signal-desktop --start-in-tray")
+end)

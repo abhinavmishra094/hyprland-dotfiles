@@ -1,6 +1,5 @@
-config_file=~/.config/hypr/keybinds.conf
+config_file=~/.config/hypr/modules/keybinds.lua
 
-keybinds=$(grep -oP '(?<=bind = ).*' "$config_file")
-keybinds=$(echo "$keybinds" | sed 's/,\([^,]*\)$/ = \1/' | sed 's/, exec//g' | sed 's/^,//g')
+keybinds=$(grep -oP 'bind\("\K[^"]+' "$config_file")
 
 echo "$keybinds" | wofi --dmenu --prompt "Keybinds"

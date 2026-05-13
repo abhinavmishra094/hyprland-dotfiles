@@ -47,7 +47,7 @@ output_path = "~/.config/gtk-4.0/gtk.css"
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/hyprland-static.conf"
 output_path = "~/.config/hypr/colors_matugen.conf"
-post_hook = "hyprctl keyword source ~/.config/hypr/colors_matugen.conf 2>/dev/null || true; systemctl --user restart quickshell.service 2>/dev/null || true"
+post_hook = "hyprctl reload 2>/dev/null || true; systemctl --user restart quickshell.service 2>/dev/null || true"
 
 # Quickshell
 [templates.quickshell]
@@ -68,6 +68,11 @@ output_path = "~/.mozilla/firefox/matugen/chrome/userChrome.css"
 [templates.vivaldi]
 input_path = "~/.config/matugen/templates/vivaldi-static.css"
 output_path = "~/.config/vivaldi/matugen.css"
+
+# Helium
+[templates.helium]
+input_path = "~/.config/matugen/templates/helium-static.css"
+output_path = "~/.config/net.imput.helium/matugen.css"
 
 # Zed
 [templates.zed]
@@ -94,6 +99,34 @@ output_path = "~/.config/kdeglobals"
 input_path = "~/.config/matugen/templates/mako.conf"
 output_path = "~/.config/mako/config"
 post_hook = "makoctl reload 2>/dev/null || true"
+
+# Rofi
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi-static.rasi"
+output_path = "~/.config/rofi/colors.rasi"
+
+# Dunst
+[templates.dunst]
+input_path = "~/.config/matugen/templates/dunst-static.conf"
+output_path = "~/.config/dunst/dunstrc"
+post_hook = "dunstctl reload 2>/dev/null || true"
+
+# Btop
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop-static.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
+post_hook = "pkill -USR2 btop 2>/dev/null || true"
+
+# Wofi
+[templates.wofi]
+input_path = "~/.config/matugen/templates/wofi-static.css"
+output_path = "~/.config/wofi/colors.css"
+
+# SwayNC
+[templates.swaync]
+input_path = "~/.config/matugen/templates/swaync-static.css"
+output_path = "~/.config/swaync/colors.css"
+post_hook = "swaync-client -rs 2>/dev/null || true"
 
 # Opencode
 [templates.opencode]

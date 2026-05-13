@@ -1,0 +1,9 @@
+hl.config({
+  input = {
+    kb_layout = "us",
+    follow_mouse = 1,
+    scroll_factor = 2.0,
+    sensitivity = 1.5,
+    numlock_by_default = true,
+  },
+})
