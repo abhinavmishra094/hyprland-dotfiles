@@ -1,13 +1,13 @@
 local function sh(cmd)
-  return hl.dsp.exec_cmd(cmd)
+    return hl.dsp.exec_cmd(cmd)
 end
 
 local function dispatch(command)
-  return sh("hyprctl dispatch " .. command)
+    return sh("hyprctl dispatch " .. command)
 end
 
 local function bind(keys, dispatcher, opts)
-  hl.bind(keys, dispatcher, opts)
+    hl.bind(keys, dispatcher, opts)
 end
 
 bind("SUPER + B", sh("firefox"))
@@ -48,7 +48,8 @@ bind("SUPER + E", sh("krusader"))
 bind("SUPER + d", sh("kate ~/.config/hypr/hyprland.lua"))
 bind("SUPER + R", sh("wofi --show drun"))
 bind("ALT + R", sh("hyprlauncher"))
-bind("SUPER + period", sh('killall rofi || rofi -show emoji -emoji-format "{emoji}" -modi emoji -theme ~/.config/rofi/global/emoji'))
+bind("SUPER + period",
+    sh('killall rofi || rofi -show emoji -emoji-format "{emoji}" -modi emoji -theme ~/.config/rofi/global/emoji'))
 bind("SUPER + escape", sh("wlogout --protocol layer-shell -b 5 -T 400 -B 400"))
 
 bind("SUPER + Q", hl.dsp.window.close())
@@ -87,8 +88,10 @@ bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
 
 bind("SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "e-1" }))
 bind("SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "e+1" }))
-bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
-bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
+bind("ALT + up", hl.dsp.window.move({ direction = "up" }))
+bind("ALT + down", hl.dsp.window.move({ direction = "down" }))
+bind("ALT + left", hl.dsp.window.move({ direction = "left" }))
+bind("ALT + right", hl.dsp.window.move({ direction = "right" }))
 
 bind("SUPER + CTRL + left", hl.dsp.window.resize({ x = -20, y = 0, relative = true }))
 bind("SUPER + CTRL + right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }))
@@ -102,9 +105,9 @@ bind("SUPER + grave", hl.dsp.workspace.toggle_special())
 bind("SUPER + SHIFT + grave", hl.dsp.window.move({ workspace = "special" }))
 
 for i = 1, 10 do
-  local key = i % 10
-  bind("SUPER + " .. key, hl.dsp.focus({ workspace = i }))
-  bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+    local key = i % 10
+    bind("SUPER + " .. key, hl.dsp.focus({ workspace = i }))
+    bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
 bind("SUPER + ALT + up", hl.dsp.focus({ workspace = "e+1" }))
