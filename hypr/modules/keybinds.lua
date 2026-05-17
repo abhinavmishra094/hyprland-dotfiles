@@ -87,6 +87,8 @@ bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
 
 bind("SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "e-1" }))
 bind("SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "e+1" }))
+bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
+bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
 
 bind("SUPER + CTRL + left", hl.dsp.window.resize({ x = -20, y = 0, relative = true }))
 bind("SUPER + CTRL + right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }))
