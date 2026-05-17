@@ -1,9 +1,3 @@
-hl.permission({
-  binary = "/usr/(bin|local/bin)/hyprpm",
-  type = "plugin",
-  mode = "allow",
-})
-
 hl.on("hyprland.start", function()
   hl.exec_cmd("rm -f ~/.config/hypr/hyprland.conf")
   hl.exec_cmd("dbus-update-activation-environment --systemd --all")
@@ -19,6 +13,5 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("wayvnc 0.0.0.0 5900")
   hl.exec_cmd("steam -silent")
   hl.exec_cmd("openrgb -c 000000")
-  hl.exec_cmd("hyprpm reload")
   hl.exec_cmd("signal-desktop --start-in-tray")
 end)

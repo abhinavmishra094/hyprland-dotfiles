@@ -229,24 +229,6 @@ setup_flatpak_theming() {
   "$script_path" || warn "Failed to apply Flatpak theme overrides"
 }
 
-setup_hyprpm() {
-  command -v hyprpm >/dev/null 2>&1 || return 0
-
-  if ! hyprpm list 2>/dev/null | grep -q 'Repository hyprland-plugins'; then
-    log "Adding hyprland-plugins repository to hyprpm"
-    hyprpm add https://github.com/hyprwm/hyprland-plugins || warn "Failed to add hyprland-plugins to hyprpm"
-  fi
-
-  log "Ensuring hyprexpo plugin is enabled"
-  hyprpm enable hyprexpo || warn "Failed to enable hyprexpo with hyprpm"
-
-  if [[ -n "${HYPRLAND_INSTANCE_SIGNATURE:-}" ]]; then
-    hyprpm reload || warn "Failed to reload hyprpm state in the current Hyprland session"
-  else
-    warn "Hyprland is not running, so hyprpm reload was skipped"
-  fi
-}
-
 apply_initial_theme() {
   local wallpaper
 
@@ -284,7 +266,6 @@ main() {
 
   setup_systemd_user
   setup_flatpak_theming
-  setup_hyprpm
   apply_initial_theme
 
   log "Setup complete"

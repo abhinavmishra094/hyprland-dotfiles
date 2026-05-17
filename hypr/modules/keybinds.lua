@@ -10,14 +10,6 @@ local function bind(keys, dispatcher, opts)
   hl.bind(keys, dispatcher, opts)
 end
 
-local function hyprexpo(action)
-  return function()
-    if hl.plugin.hyprexpo ~= nil then
-      hl.plugin.hyprexpo.expo(action)
-    end
-  end
-end
-
 bind("SUPER + B", sh("firefox"))
 bind("SUPER + N", sh("vivaldi"))
 bind("SUPER + SHIFT + N", sh("helium-browser"))
@@ -33,7 +25,6 @@ bind("SUPER + T", sh("kate"))
 bind("SUPER + ALT + T", sh("t3code"))
 bind("SUPER + M", sh("flatpak run io.missioncenter.MissionCenter"))
 bind("SUPER + K", sh("~/.config/hypr/keybind"))
-bind("SUPER + J", hyprexpo("toggle"))
 bind("SUPER + F12", sh("pactl set-sink-volume @DEFAULT_AUDIO_SINK@ +5%"))
 bind("SUPER + F11", sh("pactl set-sink-volume @DEFAULT_AUDIO_SINK@ -5%"))
 bind("ALT + H", sh("~/.config/hypr/toggle-scale.sh"))
@@ -44,7 +35,7 @@ bind("SUPER + U", sh("~/.config/hypr/scripts/hyprpwcenter-launch.sh"))
 bind("SUPER + SHIFT + T", sh("/home/abhinav/.local/bin/matugen-theme-gui"))
 bind("SUPER + SHIFT + W", sh("/home/abhinav/.local/bin/waypaper"))
 
-local screenshot_area = 'hyprctl keyword animation "fadeOut,0,0,default"; grimblast --notify copysave area "/home/abhinav/Screen Shot/$(date +%Y-%m-%d_%H-%M-%S).png"; hyprctl keyword animation "fadeOut,1,4,default"'
+local screenshot_area = "~/.config/hypr/scripts/screenshot-area.sh"
 bind("SUPER + SHIFT + S", sh(screenshot_area))
 bind("Print", sh("grimblast --notify --cursor copysave output"))
 bind("ALT + Print", sh("grimblast --notify --cursor copysave screen"))
@@ -94,10 +85,8 @@ bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
 bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
 bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
 
-bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
-bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
-bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
-bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
+bind("SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "e-1" }))
+bind("SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "e+1" }))
 
 bind("SUPER + CTRL + left", hl.dsp.window.resize({ x = -20, y = 0, relative = true }))
 bind("SUPER + CTRL + right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }))
