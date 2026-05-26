@@ -12,5 +12,5 @@ hl.monitor({
   min_luminance = 0.0,
   max_luminance = 456,
   max_avg_luminance = 254,
-  vrr = 3,
+  vrr = 2,
 })

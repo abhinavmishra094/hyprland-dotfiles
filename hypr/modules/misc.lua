@@ -6,5 +6,6 @@ hl.config({
     enable_swallow = true,
     swallow_regex = "^(kitty)$",
     screencopy_force_8b = true,
+    vrr = 2,
   },
 })
