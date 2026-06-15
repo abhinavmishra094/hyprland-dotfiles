@@ -41,3 +41,4 @@ application/ogg=mpv.desktop
 application/x-ogg=mpv.desktop
 audio/x-m4a=mpv.desktop
 audio/x-matroska=mpv.desktop
+x-scheme-handler/t3code=t3code.desktop
